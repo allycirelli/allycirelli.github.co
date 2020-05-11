@@ -1,0 +1,229 @@
+/* importing fonts */
+
+@font-face {
+font-family: "CoconatBold";
+src: url("../fonts/CoconatBold.otf");
+}
+
+@font-face {
+font-family: "CoconatRegular";
+src: url("../fonts/CoconatRegular.otf");
+}
+
+@font-face {
+font-family: "UniversEx";
+src: url("../fonts/UniversEx.ttf");
+}
+
+@font-face {
+font-family: "UniversExBold";
+src: url("../fonts/UniversExBold.ttf");
+}
+
+@font-face {
+font-family: "UniversExBoldOb";
+src: url("../fonts/UniversExBoldOb.ttf");
+}
+
+@font-face {
+font-family: "UniversExOb";
+src: url("../fonts/UniversExOb.ttf");
+}
+
+/* basic style code for html page */
+
+html{
+  overflow: hidden;
+  height: 100%;
+}
+
+/* end basic style code */
+
+/* end fonts */
+
+/* code for navigation bar */
+
+/* code for the div that the navigation bar lives in */
+
+#nav {
+  position:fixed;
+  z-index:100;
+  top:0;
+  background-color:white;
+  padding-top: .2em;
+  padding-left: .4em;
+  padding-right: .4em;
+  width:100%;
+  height:4em;
+  font-family: "CoconatBold";
+} 
+
+/* code for the ordered list within the navigation bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #000000;
+}
+
+li a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+li a:hover, li a:active {
+  color: #FFB200;
+  text-decoration: none;
+}
+
+/*end code for navigation bar */
+
+/* code for html body */
+
+body{
+  color: black;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* code for html body */
+
+/* code for header image */
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20vw 0 5vw;
+  position: relative;
+  transform-style: inherit;
+}
+
+header img {
+  width: 30vw; /* change size of content within header */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+}
+
+header, header:before {
+  background: 50% 50% / cover;
+}
+
+header::before {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/aboutbanner.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 70vh;
+}
+
+header * {
+  font-weight: normal;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: white;
+}
+
+/* end code for header image */
+
+/* code for div under the header image*/
+
+.main-contain {
+  margin-top: 45em; /* change this to control space above text in this section */
+  padding-left: 18vh;
+  padding-right: 18vh;
+  background-color: white;
+}
+
+.main-contain h2 {
+  background-color: white;
+  font-family: "CoconatBold";
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+    padding-bottom: 1em;
+}
+
+.main-contain h3 {
+  margin-top: 2em; /* change this to control space above text in this section */
+  background-color: white;
+  font-family: "UniversExBold";
+  text-align: center;
+  font-weight: 300px;
+}
+
+.main-contain p {
+  margin-top: .2em; /* change this to control space above text in this section */
+  background-color: white;
+  font-family: "UniversEx";
+  text-align: center;
+  font-weight: 300px;
+}
+
+/* end code for div under the header image*/
+
+/* code to make pages responsive to different screen sizes */
+ 
+@media only screen and (max-width: 991px) {
+  
+  header img{
+    width: 30%;
+  }
+  
+  header {
+      width: 100%;
+      margin: auto;
+      }
+ 
+  header h1 {
+      width: 90%;
+      margin: auto;
+      }
+    
+  .main-contain p {
+      width: 90%;
+  }
+    
+  .main-contain h3 {
+      width: 90%;
+  }
+    
+  .main-contain h2 {
+      width: 90%;
+  }
+  
+  .main-contain h1 {
+      width: 90%;
+  }    
+    
+}
+
+/* end code to make pages responsive to different screen sizes */

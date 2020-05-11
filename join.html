@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Loosely Bound Book Club</title>
+        <link rel="stylesheet" href="css/join.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+    <body>
+    
+        <div id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="botm.html">BotM</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li style="float:right"><a class="active" href="index.html"><img src="img/smalllogo.png" width="30em" alt="logo"></a></li>
+        </ul>
+        </div>
+    
+    <header>
+        <h1><img src="img/join.png" alt="logo"></h1>
+    </header>
+    
+        <div class="main-contain">
+            
+            <h2>Join Loosely Bound!</h2>
+    
+            <div class="container"> <!-- setting up inner container for form -->
+            
+                <form action="join2.html#submitted"> <!-- sending form user to dummy form submission page -->
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">E-mail</label>
+                        </div>
+                        <div class="col-75">
+                                <input type="text" id="email" name="email" placeholder="Enter a valid e-mail address">
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="country" name="country" placeholder="Where are you located?">
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="author">Favorite Authors</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="author" name="faveauthor" placeholder="Fave authors..">
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="genre">Favorite Genres</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="genre" name="favegenre" placeholder="Fave genres..">
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="era">Do you prefer new books, classics, or both?</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="genre" name="genre">
+                                <option value="new">new</option>
+                                <option value="classics">classics</option>
+                                <option value="both">both</option>
+                            </select>
+                        </div>
+                    </div>
+      
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+  
+                </form> <!-- end form -->
+                
+            </div> <!--- end inner container div -->
+    
+        <br><br><br><br><br>
+
+        </div> <!-- end main container div -->
+    
+    </body>
+    
+</html>
